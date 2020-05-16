@@ -1,7 +1,7 @@
 # !bin/bash
 #Author:Dhruv Lohar
 
-
+clear
 printf "\e[31;1m _______  _______          \e[0m\e[34;1m _______  _______  _       \e[0m\n"
 printf "\e[31;1m(  ____ )(  ___  )|\     /|\e[0m\e[34;1m(  ____ \(  ____ \( (    /|\e[0m\n"
 printf "\e[31;1m| (    )|| (   ) |( \   / )\e[0m\e[34;1m| (    \/| (    \/|  \  ( |\e[0m\n"
