@@ -14,7 +14,7 @@ printf "\e[31;1m|/       |/     \|   \_/   \e[0m\e[34;1m(_______)(_______/|/    
 printf "\n"
 printf "                 \e[36m[§]Advance Payload Generator\n"
 printf "                 \e[36m[§]Coded by : \e[31;1;43mDhruv Lohar\e[0m\n"
-printf "                 \e[36m[§]Specially for termux users\e[0m"
+printf "                 \e[36m[§]Only for termux users\e[0m"
 printf "\n"
 printf "\n"
 read -p 'Enter active serveo port: ' port
